@@ -1,0 +1,33 @@
+.landing-hero-container {
+  display: flex;
+  flex: 0 1 600px;
+  height: 100%;
+  gap: 3px;
+  margin: auto 0 auto 30px;
+
+  .hero-picture-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+  }
+
+  .hero-picture {
+    flex: 0 1 700px;
+    background-image: url('/images/1_.jpg');
+    filter: grayscale(100%) contrast(1.3);
+    position: relative;
+  }
+}
+
+.hero-picture::before {
+  content: "FX JIU JITSU";
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: bold;
+  font-size: $hero-text-size;
+  bottom: 9%;
+  left: -$hero-text-gap;
+}
+

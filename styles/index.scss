@@ -1,0 +1,13 @@
+// Generic
+@import './generic/variables';
+@import './generic/fonts';
+@import './generic/globals';
+
+// Content
+@import './content/landig';
+@import './content/navigation';
+@import './content/timetable';
+@import './content/contact';
+
+// Transforms & Animations
+@import './generic/transforms';

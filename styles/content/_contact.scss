@@ -1,0 +1,79 @@
+.contact-container {
+  margin: auto 0;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 15px;
+  overflow: hidden;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  position: relative;
+
+  .contact-container-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: rgba(255, 0, 0, 0.07);
+      }
+    }
+  }
+
+  .contact-location-text {
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
+
+  a:hover {
+    svg {
+      path {
+        fill: red;
+      }
+    }
+  }
+}
+
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  position: relative;
+  filter: grayscale(100%) contrast(1.3);
+  flex: 0 1 660px;
+  background-image: url('/images/contact.jpg');
+
+  @media only screen and (max-width: 950px) {
+    display: none;
+  }
+}
